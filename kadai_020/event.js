@@ -1,6 +1,16 @@
-const button =document.getElementById('btn');
+console.log(document.head);
+console.log(document.body);
+
+const btn = document.getElementById('btn');
+const txt = document.getElementById('text');
+
+console.log(btn);
+console.log(txt);
 
 
-button.addEventListener('click', () => {
+
+btn.addEventListener('click', () => {
     console.log('ボタンをクリックしました');
+    txt.textContent = 'ボタンをクリックしました';
 });
+
