@@ -1,11 +1,14 @@
-const btn = document.getElementById('');
-const text = document.getElementById('');
+const btn = document.getElementById('btn');
+const text = document.getElementById('text');
 
 btn.addEventListener('click', () => {
-console.log('ボタンをクリックしました')
+    setTimeout(() => {
+        text.textContent = 'ボタンをクリックしました';
+    console.log('ボタンをクリックしました')
+        
+        console.log('text');
+    },
+    2000);
+   
 });
 
-setTimeout(() => {
-    console.log('text');
-},
-2000);
